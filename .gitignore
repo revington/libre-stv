@@ -1,0 +1,21 @@
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+coverage-final.json
+html-report
+lib-cov
+coverage
+
+npm-debug.log
+node_modules
+
+# apple users
+\.DS_Store

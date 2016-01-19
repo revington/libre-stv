@@ -1,0 +1,40 @@
+{
+    "ecmaFeatures": {
+        arrowFunctions: true
+        binaryLiterals: true
+        blockBindings: true
+        classes: true
+        forOf: true
+        generators: true
+        objectLiteralShorthandMethods: true
+        objectLiteralShorthandProperties: true
+        octalLiterals: true
+        templateStrings: true
+    },
+    "rules": {
+        "indent": [
+            2,
+            4
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "no-console": 0,
+        "no-fallthrough": 0,
+        "vars-on-top": 2
+    },
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "extends": "eslint:recommended"
+}

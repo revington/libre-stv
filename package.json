@@ -1,0 +1,20 @@
+{
+    "name": "libre-stv",
+    "version": "0.0.1",
+    "description": "A free/libre Single Transferable Vote implementation",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "author": "Pedro Narciso García Revington",
+    "license": "MIT",
+    "dependencies": {
+        "big.js": "^3.1.3"
+    },
+    "scripts": {
+        "test": "node_modules/mocha/bin/_mocha --reporter spec --bail --check-leaks"
+    },
+    "devDependencies": {
+        "mocha": "^2.3.4"
+    }
+}
