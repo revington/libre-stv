@@ -1,2 +1,2 @@
-# stvjs
-Single transferable vote implementation
+# libre-stv
+A Single Transferable Vote implementation
