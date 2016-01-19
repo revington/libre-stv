@@ -16,5 +16,25 @@
     },
     "devDependencies": {
         "mocha": "^2.3.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/revington/libre-stv.git"
+    },
+    "keywords": [
+        "stv",
+        "single transferable vote",
+        "democracy",
+        "vote",
+        "voting",
+        "liquid democracy",
+        "democracy 2.0"
+    ],
+    "bugs": {
+        "url": "https://github.com/revington/libre-stv/issues"
+    },
+    "homepage": "https://github.com/revington/libre-stv#readme",
+    "engines": {
+        "node": ">=0.8"
     }
 }

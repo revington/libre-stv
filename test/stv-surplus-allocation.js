@@ -1,9 +1,9 @@
 'use strict';
-const assert = require('assert');
-const stv = require('..');
-const surplus = stv.stvSurplusAllocation;
-const Big = require('big.js');
-const party = require('./fixtures/party');
+var assert = require('assert');
+var stv = require('..');
+var surplus = stv.stvSurplusAllocation;
+var Big = require('big.js');
+var party = require('./fixtures/party');
 
 describe('#stvSurplusAllocation(winners, index, quota)', function () {
     it('should transfer quota excess from winners to hopefulls (second options)', function () {

@@ -1,8 +1,8 @@
 'use strict';
-const assert = require('assert');
-const stv = require('..');
-const losers = stv.stvLoserExclusion;
-const Big = require('big.js');
+var assert = require('assert');
+var stv = require('..');
+var losers = stv.stvLoserExclusion;
+var Big = require('big.js');
 
 function deepCopy(obj) {
     return JSON.parse(JSON.stringify(obj));
