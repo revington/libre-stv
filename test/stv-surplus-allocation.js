@@ -2,7 +2,6 @@
 var assert = require('assert');
 var stv = require('..');
 var surplus = stv.stvSurplusAllocation;
-var Big = require('big.js');
 var party = require('./fixtures/party');
 
 describe('#stvSurplusAllocation(winners, index, quota)', function () {
@@ -10,9 +9,15 @@ describe('#stvSurplusAllocation(winners, index, quota)', function () {
         // See https://en.wikipedia.org/wiki/Single_transferable_vote#Example
         // This will be round 2, where chocolate excess gets distributed to 
         // first-choice-chocolate second options. In this case, strawberries and sweets
-        var index = stv.makeIndexOfVotes(party.votes);
-        var summatory = stv.summatory(index, party);
-        var ret = surplus(stv.getWinners(summatory, 6), index, 6);
+        var round = {
+            index: stv.makeIndexOfVotes(party.votes),
+            ret: [],
+            excluded: {},
+            quota: 6
+        };
+        round.summatory = stv.summatory(round, party);
+	var winners = stv.getWinners(round.summatory, round.quota);
+        var ret = surplus(round, stv.getWinners(round.summatory, 6));
         var expected = [{
             pos: 0,
             vote: [0],
@@ -38,7 +43,7 @@ describe('#stvSurplusAllocation(winners, index, quota)', function () {
             vote: [4],
             count: '1'
         }];
-        var actual = JSON.parse(JSON.stringify(index));
+        var actual = JSON.parse(JSON.stringify(round.index));
         assert.deepEqual(actual, expected);
     });
 });
