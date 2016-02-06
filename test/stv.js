@@ -13,7 +13,7 @@ describe('#stv(votes, quota, seats)', function () {
             seats: [
                 [2, 12],
                 [0, 6],
-                [3, 5]
+                [3]
             ]
         };
         assert.deepEqual(actual, expected);
