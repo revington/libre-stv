@@ -28,8 +28,8 @@ describe('Issue #5', function () {
         var expected = {
             seats: [
                 [5, 2],
-                [0, 1],
-                [4, 0.6363636363636362]
+                [0],
+                [4]
             ]
         };
         assert.deepEqual(actual, expected);
