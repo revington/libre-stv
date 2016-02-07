@@ -11,9 +11,9 @@ describe('#stv(votes, quota, seats)', function () {
         var actual = fn(party, quota);
         var expected = {
             seats: [
-                [2, 12],
-                [0, 6],
-                [3, 5]
+                [2, 12, 'winner'],
+                [0, 6, 'winner'],
+                [3, 5,'loser']
             ]
         };
         assert.deepEqual(actual, expected);

@@ -27,9 +27,9 @@ describe('Issue #5', function () {
         var actual = fn(party, quota);
         var expected = {
             seats: [
-                [5, 2],
-                [0, 1],
-                [4, 0.6363636363636362]
+                [5, 2, 'winner'],
+                [0, 1,'loser'],
+                [4, 0.6363636363636362, 'loser']
             ]
         };
         assert.deepEqual(actual, expected);
