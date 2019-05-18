@@ -15,7 +15,7 @@
         "test": "node_modules/mocha/bin/_mocha --reporter spec --bail --check-leaks"
     },
     "devDependencies": {
-        "mocha": "^2.3.4"
+        "mocha": "^6.1.4"
     },
     "repository": {
         "type": "git",
