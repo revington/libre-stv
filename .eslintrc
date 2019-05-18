@@ -1,16 +1,4 @@
 {
-    "ecmaFeatures": {
-        "arrowFunctions": true,
-        "binaryLiterals": true,
-        "blockBindings": true,
-        "classes": true,
-        "forOf": true,
-        "generators": true,
-        "objectLiteralShorthandMethods": true,
-        "objectLiteralShorthandProperties": true,
-        "octalLiterals": true,
-        "templateStrings": true
-    },
     "rules": {
         "indent": [
             2,

@@ -16,8 +16,11 @@ describe('#stvSurplusAllocation(winners, index, quota)', function () {
             quota: 6
         };
         round.summatory = stv.summatory(round, party);
-	var winners = stv.getWinners(round.summatory, round.quota);
-        var ret = surplus(round, stv.getWinners(round.summatory, 6));
+        // eslint-disable-next-line vars-on-top
+        stv.getWinners(round.summatory, round.quota);
+        // eslint-disable-next-line vars-on-top
+        surplus(round, stv.getWinners(round.summatory, 6));
+        // eslint-disable-next-line vars-on-top
         var expected = [{
             pos: 0,
             vote: [0],
@@ -43,6 +46,7 @@ describe('#stvSurplusAllocation(winners, index, quota)', function () {
             vote: [4],
             count: '1'
         }];
+        // eslint-disable-next-line vars-on-top
         var actual = JSON.parse(JSON.stringify(round.index));
         assert.deepEqual(actual, expected);
     });

@@ -22,7 +22,7 @@ describe('#stv(votes, quota, seats)', function () {
 describe('#getWinners(summatory, quota)', function () {
     it('should return a hash object with winner IDs', function () {
         var summatory = [0, 1, 2, 2, 3].map(function (x) {
-            return new Big(x)
+            return new Big(x);
         });
         var actual = stv.getWinners(summatory, 2);
         assert.deepEqual(actual, {
@@ -35,7 +35,7 @@ describe('#getWinners(summatory, quota)', function () {
 describe('#getLosers(summatory, quota)', function () {
     it('should return a hash object with loser IDs', function () {
         var summatory = [0, 1, 1, 2, 2, 3].map(function (x) {
-            return new Big(x)
+            return new Big(x);
         });
         var actual = stv.getLosers(summatory, 2);
         assert.deepEqual(actual, {

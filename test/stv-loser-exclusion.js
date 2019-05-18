@@ -12,21 +12,22 @@ describe('#stvLoserExclusion(losers, index)', function () {
     it('should transfer votes from losers to second options', function () {
         var index = [{
             pos: 1,
-            vote: [4, 0,1],
+            vote: [4, 0, 1],
             count: new Big(4)
         }, {
             pos: 1,
             vote: [2, 1, 0],
             count: new Big(2)
-	}];
+        }];
         var expected = deepCopy(index);
-	expected[0].pos++;
+        expected[0].pos++;
         losers({
             '0': true
         }, index);
         // Deep copy also forces Big.js objects to get serialized,
         // you can not compare original to index because index will keep
         // the Big.js numbers will original not.
+        // eslint-disable-next-line vars-on-top
         var actual = deepCopy(index);
         assert.deepEqual(actual, expected);
     });
@@ -66,6 +67,7 @@ describe('#stvLoserExclusion(losers, index)', function () {
         // Deep copy also forces Big.js objects to get serialized,
         // you can not compare original to index because index will keep
         // the Big.js numbers will original not.
+        // eslint-disable-next-line vars-on-top
         var actual = deepCopy(index);
         assert.deepEqual(actual, original.slice(1));
     });
