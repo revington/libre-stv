@@ -15,6 +15,7 @@
         "test": "node_modules/mocha/bin/_mocha --reporter spec --bail --check-leaks"
     },
     "devDependencies": {
+        "eslint": "^5.16.0",
         "mocha": "^6.1.4"
     },
     "repository": {
