@@ -12,7 +12,7 @@ describe('Issue #1', function () {
             options: [1, 2, 0],
             count: 1
         }],
-        options: ["a", "b", "c"],
+        options: ['a', 'b', 'c'],
         seats: 3,
     };
     it('should not break when there are not enough losers to cover all seats', function () {

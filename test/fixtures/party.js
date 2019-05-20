@@ -22,4 +22,4 @@ exports = module.exports = {
         options: [4],
         count: 1
     }]
-}
+};

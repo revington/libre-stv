@@ -5,14 +5,14 @@ var assert = require('assert');
 describe('Issue #2', function () {
     var fn = stv(stv.stvSurplusAllocation, stv.stvLoserExclusion);
     var party = {
-        "votes": [{
-            "options": [0, 5, 7, 2, 4, 6, 8, 9, 3, 1],
-            "count": 1
+        'votes': [{
+            'options': [0, 5, 7, 2, 4, 6, 8, 9, 3, 1],
+            'count': 1
         }, {
-            "options": [5, 7, 4, 8, 1, 9, 3, 2, 0, 6],
-            "count": 1
+            'options': [5, 7, 4, 8, 1, 9, 3, 2, 0, 6],
+            'count': 1
         }],
-        options: ["a", "b", "c", "d", "e", "f", "g", "h"],
+        options: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
         seats: 8
     };
 
