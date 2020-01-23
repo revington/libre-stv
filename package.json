@@ -1,6 +1,6 @@
 {
   "name": "libre-stv",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A free/libre Single Transferable Vote implementation",
   "main": "index.js",
   "directories": {
